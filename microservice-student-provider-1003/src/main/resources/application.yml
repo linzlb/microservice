@@ -1,0 +1,39 @@
+server:
+  port: 1003
+  context-path: /
+
+# 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_springcloud
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+  application:
+      name: microservice-student
+
+info:
+   groupId: $project.groupId$
+   artifactId: $project.artifactId$
+   version: $project.version$
+   负责人: 林政利
+   联系电话: 12570921913
+
+#上面是单机提供服务就够了
+#下面是接入eureka的配置
+eureka:
+  instance:
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: microservice-student  #客户端服务名
+    instance-id: microservice-student:1003 #客户端实例名称
+    prefer-ip-address: true #显示IP
+  client:
+    service-url:
+      # 单机 defaultZone: http://localhost:2001/eureka   #把服务注册到eureka注册中心
+      defaultZone: http://eureka2004.java1234.com:2004/eureka/,http://eureka2002.java1234.com:2002/eureka/,http://eureka2006.java1234.com:2006/eureka/ # 集群

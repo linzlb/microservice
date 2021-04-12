@@ -1,0 +1,40 @@
+server:
+  port: 3001
+  context-path: /
+
+zuul:
+  servlet-path: /
+#  ignored-services: "*" #屏蔽其他的
+#  prefix: /pre #前缀
+  routes:
+    linzlb:
+      path: /it/**
+      url: http://www.ityouknow.com/
+    linzhengli559:
+      path: /c/** #通过这个路由可以请求到url
+#      url: http://localhost:8001/
+      url: microservice-student #通过在eureka获取服务来访问
+    studentServer:
+      serviceId: microservice-student #通过在eureka获取服务来访问
+      path: /cc/** #服务名称 映射
+
+spring:
+  application:
+    name: microservice-zuul
+
+info:
+   groupId: $project.groupId$
+   artifactId: $project.artifactId$
+   version: $project.version$
+   负责人: 林政利
+   联系电话: 12570921913
+
+#下面是接入eureka的配置
+eureka:
+  instance:
+    instance-id: microservice-zuul:3001 #客户端实例名称
+    prefer-ip-address: true #显示IP
+  client:
+    service-url:
+      # 单机 defaultZone: http://localhost:2001/eureka   #把服务注册到eureka注册中心
+      defaultZone: http://eureka2004.java1234.com:2004/eureka/,http://eureka2002.java1234.com:2002/eureka/,http://eureka2006.java1234.com:2006/eureka/ # 集群

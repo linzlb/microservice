@@ -1,0 +1,24 @@
+server:
+  port: 91
+  context-path: /
+
+turbine:
+  app-config: microservice-student   # 指定要监控的应用名称
+  clusterNameExpression: "'default'" #表示集群的名字为default
+
+spring:
+  application:
+    name: turbine
+
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    register-with-eureka: false #false 由于注册中心的职责就是维护服务实例，它并不需要去检索服务，所以也设置为false
+    service-url:
+      defaultZone: http://eureka2004.java1234.com:2004/eureka/,http://eureka2002.java1234.com:2002/eureka/,http://eureka2006.java1234.com:2006/eureka/
