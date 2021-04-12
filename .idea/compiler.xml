@@ -31,6 +31,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="microservice" target="1.8" />
+      <module name="microservice-adminserver-3031" target="1.8" />
+      <module name="microservice-adminserver-3061" target="1.8" />
       <module name="microservice-common" target="1.8" />
       <module name="microservice-eureka-server-2001" target="1.8" />
       <module name="microservice-eureka-server-2002" target="1.8" />

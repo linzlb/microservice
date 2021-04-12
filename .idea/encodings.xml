@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-adminserver-3031" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-adminserver-3061" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-adminserver-3061" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-eureka-server-2002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-eureka-server-2004" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservice-eureka-server-2006" charset="UTF-8" />

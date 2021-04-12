@@ -16,6 +16,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/microservice-adminserver-3061/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-eureka-server-2001/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-student-consumer-8002/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-student-consumer-8003/pom.xml" />
