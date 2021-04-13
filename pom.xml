@@ -18,6 +18,7 @@
         <module>microservice-student-consumer-hystrix-dashboard-90</module>
         <module>microservice-student-consumer-hystrix-turbine-91</module>
         <module>microservice-zuul-3001</module>
+        <module>microservice-gateway-3333</module>
     </modules>
     <packaging>pom</packaging>
 

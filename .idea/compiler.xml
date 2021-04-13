@@ -11,6 +11,7 @@
         <module name="microservice-eureka-server-2002 (1)" />
         <module name="microservice-eureka-server-2004" />
         <module name="microservice-eureka-server-2006" />
+        <module name="microservice-gateway-3333" />
         <module name="microservice-student-consumer-80" />
         <module name="microservice-student-consumer-80 (1)" />
         <module name="microservice-student-consumer-80 (2)" />
@@ -26,6 +27,7 @@
         <module name="microservice-student-provider-hystrix-1004 (1)" />
         <module name="microservice-student-provider-hystrix-1005" />
         <module name="microservice-zuul-3001" />
+        <module name="microservicegateway3301" />
         <module name="mircoservice-common" />
       </profile>
     </annotationProcessing>
@@ -40,6 +42,9 @@
       <module name="microservice-eureka-server-2003" target="1.8" />
       <module name="microservice-eureka-server-2004" target="1.8" />
       <module name="microservice-eureka-server-2006" target="1.8" />
+      <module name="microservice-gateway-3031" target="1.8" />
+      <module name="microservice-gateway-3301" target="1.8" />
+      <module name="microservice-gateway-3333" target="1.8" />
       <module name="microservice-student-consumer-80" target="1.8" />
       <module name="microservice-student-consumer-80 (1)" target="1.8" />
       <module name="microservice-student-consumer-80 (2)" target="1.8" />
@@ -58,6 +63,7 @@
       <module name="microservice-student-provider-hystrix-1005" target="1.8" />
       <module name="microservice-zuul-3001" target="1.8" />
       <module name="microserviceeurekaserver2001" target="1.8" />
+      <module name="microservicegateway3301" target="1.8" />
       <module name="mircoservice-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
