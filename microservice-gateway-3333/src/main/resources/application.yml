@@ -7,6 +7,10 @@ spring:
   profiles:
     active: after_route,query_route,add_request_header_route,elapse_route
 
+#组合使用，见：
+#http://www.ityouknow.com/springcloud/2018/12/12/spring-cloud-gateway-start.html
+#组合使用 章节
+
 ---
 spring:
   cloud:
